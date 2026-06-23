@@ -104,6 +104,7 @@ export default function AddPage() {
               <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Job #</label>
               <input
                 required
+                maxLength="7"
                 name="jobNumber"
                 value={form.jobNumber}
                 onChange={handleField}
@@ -128,6 +129,7 @@ export default function AddPage() {
           <div className="flex flex-col gap-1">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Job Name</label>
             <input
+              maxLength="45"
               required
               name="jobName"
               value={form.jobName}
@@ -140,6 +142,7 @@ export default function AddPage() {
           <div className="flex flex-col gap-1">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Location</label>
             <input
+              maxLength="45"
               required 
               name="location"
               value={form.location}
@@ -172,6 +175,7 @@ export default function AddPage() {
                 <input
                   type="number"
                   min="0"
+                  max="5"
                   value={supportPkg}
                   onChange={handleSupportPkg}
                   placeholder="Leave Blank if None"
@@ -192,7 +196,7 @@ export default function AddPage() {
                   <input
                     type="number"
                     min="1"
-                    max={5}
+                    max={3}
                     value={courseCount}
                     onChange={handleCourseCount}
                     placeholder="e.g. 1"
@@ -204,6 +208,7 @@ export default function AddPage() {
                   <input
                     type="number"
                     min="1"
+                    max="12"
                     max={CHALLENGES.length}
                     value={challengeCount}
                     onChange={handleChallengeCount}
@@ -215,7 +220,7 @@ export default function AddPage() {
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Kiosk PCs</label>
                   <input
                     type="number"
-                    min="1"
+                    min="0"
                     value={kioskCount}
                     onChange={handleKioskCount}
                     placeholder="e.g. 2"
