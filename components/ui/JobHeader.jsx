@@ -117,7 +117,7 @@ export default function JobHeader({ job, onPatchJob, onDeleteJob }) {
           </label>
 
           <label className="text-sm flex flex-col gap-1">
-            <span className="text-gray-600">Venue</span>
+            <span className="text-gray-600">Attraction</span>
             <input
               value={form.venue}
               onChange={(e) => setForm((prev) => ({ ...prev, venue: e.target.value }))}

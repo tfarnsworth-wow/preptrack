@@ -150,14 +150,14 @@ export default function AddPage() {
           </div>
           {/*Attraction*/}
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Venue</label>
+            <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Attraction</label>
             <select
               name="venue"
               value={form.venue}
               onChange={handleField}
               className="border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">-- Select a venue --</option>
+              <option value="">-- Select an attraction --</option>
               {VENUE_OPTIONS.map((v) => (
                 <option key={v} value={v}>{v}</option>
               ))}

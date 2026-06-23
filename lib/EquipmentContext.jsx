@@ -64,6 +64,9 @@ function seedItems(job) {
         ) {
             return createEquipmentItem(template, template.name, playerCount+supportPkgCount)
         }
+        if (template.name === 'Kiosk Tablet') {
+            return createEquipmentItem(template, template.name, 2)
+        } 
 
         return createEquipmentItem(template)
     })
